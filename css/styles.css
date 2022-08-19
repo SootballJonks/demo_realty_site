@@ -1,0 +1,86 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+/* NAVBAR
+-------------------------------------------------- */
+
+.blur-nav {
+  background-color: rgba(0, 0, 0, 0.754);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.blur-nav a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.blur-nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+.hero {
+  background: url('/lb_site_skele/assets/hero.jpg') no-repeat center center;
+  max-height: auto;
+  max-width: 100%;
+  background-size: 100%;
+  text-shadow: 2px 2px 8px #000000;
+}
+
+.hero-text {
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+}
+
+/* Center align the text within the three columns below the hero */
+.marketing .col-lg-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin-top: 2rem;
+  margin-bottom: 5rem; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  
+}
