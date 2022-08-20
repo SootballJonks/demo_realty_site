@@ -25,6 +25,10 @@ body {
   text-decoration: none;
 }
 
+.dropdown-item:hover {
+  background-color:#00000070;
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
