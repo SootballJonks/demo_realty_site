@@ -32,12 +32,18 @@ body {
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
+main {
+  margin-top: 5.45rem;
+}
+
 .hero {
   background: url('../assets/hero.jpg') no-repeat center center;
-  max-height: auto;
+  height: auto;
   max-width: 100%;
   background-size: 100%;
   text-shadow: 2px 2px 8px #000000;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .hero-text {
@@ -93,6 +99,63 @@ body {
   }
 }
 
-@media (min-width: 62em) {
+@media only screen and (max-width: 992px) {
   
+  nav > div.container-fluid {
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+  /* nav > button {
+    order: 1;
+  }
+  .navbar-brand {
+    align-self: center;
+    order: 2;
+  }
+
+  .nav-spacer-breakpoint {
+    order:3;
+  } */
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .hero {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .hero-text {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+
+  .tagline_mobile {
+    transform: scale(0.75);
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+  .hero {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .hero-text {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .tagline_mobile {
+    transform: scale(0.5);
+  }
+
 }
