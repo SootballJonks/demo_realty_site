@@ -4,7 +4,7 @@
 
 body {
   padding-top: 1rem;
-  padding-bottom: 3rem;
+
   color: #5a5a5a;
 }
 
@@ -73,8 +73,8 @@ main {
 /* rtl:end:ignore */
 
 
-/* Featurettes
-------------------------- */
+/* FEATURETTES
+-------------------------------------------------- */
 
 .featurette-divider {
   margin-top: 2rem;
@@ -88,6 +88,19 @@ main {
 }
 
 /* rtl:end:remove */
+
+
+/* FOOTER
+-------------------------------------------------- */
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.754);
+}
+
+.social-icons > a {
+  color:#fff;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
