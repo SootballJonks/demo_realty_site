@@ -37,7 +37,8 @@ main {
 }
 
 #hero {
-  background: url('../assets/hero.jpg') no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center;
   height: auto;
   max-width: 100%;
   background-size: 100%;
@@ -112,11 +113,16 @@ main {
   }
 }
 
-@media only screen and (max-width: 1565px) {
-  /* #featurettes > div.featurette {
-    justify-content: center;
-    align-items: center;
-  } */
+@media only screen and (max-width: 1200px) {
+  .f-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .featurette-divider {
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+  }
 }
 
 @media only screen and (max-width: 992px) {
