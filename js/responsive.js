@@ -1,5 +1,6 @@
-let featurettes = document.getElementsByClassName('featurette');
+//---------------------- INDEX ----------------------
 
+let featurettes = document.getElementsByClassName('featurette');
 
 document.addEventListener('DOMContentLoaded',() => {
     for (f of featurettes) {
@@ -30,3 +31,5 @@ window.addEventListener('resize', () => {
     }
   };
 })
+
+//---------------------- ABOUT ----------------------

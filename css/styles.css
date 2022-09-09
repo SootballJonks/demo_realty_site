@@ -4,14 +4,16 @@
 
 body {
   padding-top: 1rem;
-
   color: #5a5a5a;
 }
+
 
 /* NAVBAR
 -------------------------------------------------- */
 
 .blur-nav {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: +.05rem;
   background-color: rgba(0, 0, 0, 0.754);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
@@ -85,6 +87,7 @@ main {
 /* Thin out the marketing headings */
 /* rtl:begin:remove */
 .featurette-heading {
+  font-family: 'Lato', sans-serif;
   letter-spacing: -.05rem;
 }
 
@@ -159,6 +162,7 @@ main {
 @media only screen and (max-width: 576px) {
 
   #hero {
+    background-size: 150%;
     margin-left: 0rem;
     margin-right: 0rem;
   }

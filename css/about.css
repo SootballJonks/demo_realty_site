@@ -1,0 +1,71 @@
+#about-blurb {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  max-width: 75%;
+}
+
+.about-header {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}
+
+.about-header > h1 {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 40px;
+  margin-bottom: 0.75rem;
+}
+
+.about-header > h2 {
+  font-size: 24px;
+}
+
+.about-txt {
+  padding-top: 3rem;
+}
+
+.about-img {
+  padding: 3rem;
+}
+
+.about-img > img {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  #about-blurb {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+  }
+
+  .about-img {
+    padding: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .about-header {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  #hero {
+    background-size: 150%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .about-txt {
+    padding-top: 2rem;
+  }
+
+  .about-header {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+}
