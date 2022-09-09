@@ -7,9 +7,10 @@
     <meta name="author" content="">
     <title>Where would you like to live? Lance Brown Real Estate</title>
     <!-- CSS Imports -->
-    <link rel="preload" href="/assets/hero-about.jpg" as="image">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preload" href="../assets/hero-about.jpg" as="image">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/carousel.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +27,7 @@
         -moz-user-select: none;
         user-select: none;
       }
+ 
 
       body {
         font-family: Lato-Regular, Lato, sans-serif;
@@ -56,7 +58,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top blur-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="../index.html">
           <svg width="138px" height="76.8px" viewBox="0 0 345 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>Lance Brown - Real Estate</title>
             <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -204,15 +206,66 @@
         </div>
       </div>
 
+      <!-- FEATURETTES & TESTIMONIALS -->
+      <!--=================================================-->
       <div id="featurettes" class="container-fluid text-center">
         <hr class="featurette-divider">
+
+        <!-- TESTIMONIALS -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" style="background-image: url('/assets/carousel-bg.jpg')">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- item 1 -->
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Example testimonial.</h1>
+                  <p>Some representative placeholder content for the first slide of the carousel. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="carousel-item">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Another example testimonial.</h1>
+                  <p>Some representative placeholder content for the second slide of the carousel. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="carousel-item">
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>One more for good measure.</h1>
+                  <p>Some representative placeholder content for the third slide of this carousel. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> <!-- /TESTIMONIALS -->
+
         <div class="row featurette justify-content-between">
           <div class="col-xl-6 align-self-center f-content">
             <h2 class="featurette-heading fw-normal lh-1">CASE STUDY - <span class="text-muted">MARKETING RESULTS</span></h2>
             <p class="lead">In the rapidly declining market of 2018, five homes in Ocean Park along the same street built by the same developer were for sale between $1.5M - $1.8M. Lance's listings was the first and only sale to complete at $1.75M.</p>
           </div>
           <div class="col-xl-auto align-self-center">
-            <img src="/assets/profile_headshot-rs.jpg" class="img-fluid" alt="Lance Brown Portrait" width="600" height="500">
+            <img src="../assets/featurette_CS1-rs.jpg" class="img-fluid" alt="A beautiful home" width="750" height="500">
           </div>
         </div>
 
@@ -222,7 +275,7 @@
             <p class="lead">In November 2014 Lance helped a client secure a pre-sale purchase with a 5% deposit of $16,750. The purchase price was $335,000. Four years later after completion the unit was sold for $630,000. That is an annual return of <b>141%</b> for 3 years on the initial investment.</p>
           </div>
           <div class="col-xl-auto order-xl-1">
-            <img src="/assets/featurette_stock1-rs.jpg" class="img-fluid" alt="Hands on laptop" width="750" height="500">
+            <img src="../assets/featurette_CS2-rs.jpg" class="img-fluid" alt="An aerial view of Vancouver" width="750" height="500">
           </div>
         </div>
 
@@ -233,7 +286,7 @@
             <a class="btn btn-outline-dark" href="#">RESOURCES</a>
           </div>
           <div class="col-xl-auto">
-            <img src="/assets/featurette_stock2-rs.jpg" class="img-fluid" alt="Highrise building" width="750" height="500">
+            <img src="../assets/featurette_CS3-rs.jpg" class="img-fluid" alt="A team of professionals" width="750" height="500">
           </div>
         </div>
         <hr class="featurette-divider">
@@ -349,7 +402,7 @@
     </footer>
   
     <!-- SCRIPT IMPORTS -->
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/responsive.js"></script>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <script src="../js/responsive.js"></script>
     </body>
 </html>
