@@ -1,4 +1,4 @@
-//---------------------- INDEX ----------------------
+//---------------------- GLOBAL ----------------------
 
 let featurettes = document.getElementsByClassName('featurette');
 
