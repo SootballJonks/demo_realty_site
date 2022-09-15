@@ -27,18 +27,6 @@
     </style>
     <!-- ---------------------------------------------- -->
 
-    <!--
-      TODO: -Replace SVG code with asset file (because it's very messy in here)
-            -Add contact information to navbar
-            -Create following template pages:
-                -Listings
-                -MLS Search
-                -Neighborhoods overview
-                -About/Marketing/Resources/Contact
-
-            **NOTE: some responsive design elements will need to be created after site is converted to WordPress, as jQuery might act differently
-    -->
-
   </head>
 
   <header>
@@ -85,7 +73,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="/html/about.html">ABOUT</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -98,19 +86,19 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">NEW DEVELOPMENTS</a>
+              <a class="nav-link" href="/html/new-developments.html">NEW DEVELOPMENTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">REAL ESTATE MARKETING</a>
+              <a class="nav-link" href="/html/real-estate-marketing.html">REAL ESTATE MARKETING</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">NEIGHBORHOODS</a>
+              <a class="nav-link" href="/html/neighborhoods.html">NEIGHBORHOODS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">RESOURCES</a>
+              <a class="nav-link" href="/html/resources.html">RESOURCES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
+              <a class="nav-link" href="/html/contact.html">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -282,49 +270,49 @@
             <img src="../assets/featurette_CS3-rs.jpg" class="img-fluid" alt="A team of professionals" width="750" height="500">
           </div>
         </div>
-
-        <!-- CONTACT BANNER -->
-        <section id="contact-banner" class="row featurette justify-content-around mt-3" style="background-image: url('../assets/contact-banner.jpg')">
-          <div class="col-xl-6 order-xl-2 align-self-center py-4 contact-snippet">
-            <h2 class="featurette-heading fw-normal lh-1 text-light">Work with <span class="">Lance Brown</span> </h2>
-            <p class="lead text-light">To fully understand your lifestyle goals I feel it’s important to sit down and meet in person. The best transactions come together from a working relationship that is based on trust and honesty. These values are built over time and from face to face interactions. Preferably with chai lattes.</p>
-            <a class="" href="#">+1 778-846-2006</a>
-          </div>
-
-          <div class="col-xl-auto order-xl-1">
-            <form id="contactForm" class="row input-container" method="post" enctype="multipart/form-data">
-              <div class="col-xs-12">
-                <div class="styled-input wide">
-                  <input type="text" required />
-                  <label>Name</label> 
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="styled-input">
-                  <input type="text" required />
-                  <label>Email</label> 
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="styled-input" style="float:right;">
-                  <input type="text" required />
-                  <label>Phone Number</label> 
-                </div>
-              </div>
-              <div class="col-xs-12">
-                <div class="styled-input wide">
-                  <textarea required></textarea>
-                  <label>Message</label>
-                </div>
-              </div>
-              <div class="col-xs-12">
-                <div class="btn-lrg submit-btn">Send Message</div>
-              </div>
-            </form>
-          </div>
-        </section><!-- /CONTACT BANNER -->
-        
       </div><!-- /FEATURETTES -->
+
+      <!-- CONTACT BANNER -->
+      <section id="contact-banner" class="row featurette justify-content-around mt-3" style="background-image: url('../assets/contact-banner.jpg')">
+        <div class="col-xl-6 order-xl-2 align-self-center py-4 contact-snippet">
+          <h2 class="featurette-heading fw-normal lh-1 text-light">Work with <span class="">Lance Brown</span> </h2>
+          <p class="lead text-light">To fully understand your lifestyle goals I feel it’s important to sit down and meet in person. The best transactions come together from a working relationship that is based on trust and honesty. These values are built over time and from face to face interactions. Preferably with chai lattes.</p>
+          <a class="" href="#">+1 778-846-2006</a>
+        </div>
+
+        <div class="col-xl-auto order-xl-1">
+          <form id="contactForm" class="row input-container" method="post" enctype="multipart/form-data">
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input type="text" required />
+                <label>Name</label> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input">
+                <input type="text" required />
+                <label>Email</label> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input" style="float:right;">
+                <input type="text" required />
+                <label>Phone Number</label> 
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <textarea required></textarea>
+                <label>Message</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="btn-lrg submit-btn">Send Message</div>
+            </div>
+          </form>
+        </div>
+      </section><!-- /CONTACT BANNER -->
+
     </section>
   </main>
     <!-- FOOTER -->
