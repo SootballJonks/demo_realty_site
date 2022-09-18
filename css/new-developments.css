@@ -1,4 +1,195 @@
+
 #hero {
   background-color: rgba(0, 0, 0, 0.281);
   background-blend-mode: multiply;
+}
+
+/* .hero-text {
+  margin-top: 25rem;
+  margin-bottom: 25rem;
+} */
+
+/* FEATURED PROJECTS
+----------------------------------------------*/
+
+.mla-proj-blurb {
+  justify-content: center;
+}
+
+#feat-proj {
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  margin-bottom: 5rem;
+  color: black;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.section-title::after {
+  content: "";
+  border-bottom: 3px solid #010101;
+  position: absolute;
+  width: 80px;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: width ease-out 2s;
+  -moz-transition: width ease-out 2s;
+  transition: width ease-out 2s
+}
+
+.feat-proj-card {
+  padding: 0;
+  border-radius: 0;
+  border: 1px solid rgb(32, 32, 32);
+}
+
+.feat-proj-card:hover .details-btn {
+  background-color: #5a5a5a;
+  color: white;
+  transition: background-color .3s ease-in-out;
+}
+
+
+.card-body {
+  height: 11rem;
+}
+
+.accent-text {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.line {
+  content: "";
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 1.5px solid black;
+}
+
+.details-btn {
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: .5rem;
+  /* button on border <3 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.row-cols-3 {
+  justify-content: space-between;
+}
+
+.browse-btn {
+  margin-top: 3rem;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media only screen and (max-width: 1400px) {
+
+  .mla-proj-blurb {
+    justify-content: space-evenly;
+  }
+
+  .feat-proj-card {
+    width: 20rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero-text svg {
+    width: 0;
+  }
+
+  #svg-replace {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  #svg-replace::before {
+    content: "New Development Expertise";
+    color:black;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+  }
+
+  .mla-proj-blurb {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mla-proj-blurb img, .mla-proj-blurb p {
+    margin: 3rem;
+  }
+
+  .row-cols-3 {
+    justify-content: center;
+  }
+
+  .feat-proj-card {
+    width: 25rem;
+    margin: 3rem;
+  }
+
+  .browse-btn {
+    margin-top: 0;
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  #svg-replace::before {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  #svg-replace::before {
+    font-size: 24px;
+  }
+
+  .mla-proj-blurb img, .mla-proj-blurb p {
+    margin-bottom: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .mla-proj-blurb img {
+    width: 50%;
+  }
+
+  .feat-proj-card {
+    width: 20rem;
+    margin: 3rem;
+  }
+
 }

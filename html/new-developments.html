@@ -29,7 +29,7 @@
       }
 
       body {
-        font-family: Lato-Regular, Lato, sans-serif;
+        font-family: 'Lato-Regular', 'Lato', sans-serif !important;
       }
 
       @media (min-width: 768px) {
@@ -45,7 +45,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top blur-nav">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
           <svg width="138px" height="76.8px" viewBox="0 0 345 192" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>Lance Brown - Real Estate</title>
             <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -154,61 +154,125 @@
               </g>
           </g>
         </svg>
-        
       </div>
     </div>
 
-    <section>
-      <div class="row mx-auto my-4 justify-content-center">
-        <div class="col-xl-3">
-          <p>placehold</p>
-        </div>
-        <div class="col-xl-4">
-          <p>Ample experience in the presale investment world, both as an investor and as Managing Broker for Western Canada’s largest real estate marketing firm, allows Lance to provide additional value to clients in shaping their real estate decisions and investments. In a rising market access to pre-sale projects can be fierce. As an internal Realtor and Manager with MLA Canada, Lance has relationships in place to get his clients in the door first.</p>
-        </div>
-      </div>
+    <section class="text-center">
+      <div id="svg-replace"></div>
     </section>
+    
+    <section class="container-fluid">
+      <section>
+        <div class="row mx-auto my-5 mla-proj-blurb">
+          <div class="col-xl-4 align-self-center order-xl-2">
+            <p class="lead">Ample experience in the presale investment world, both as an investor and as Managing Broker for Western Canada’s largest real estate marketing firm, allows Lance to provide additional value to clients in shaping their real estate decisions and investments. In a rising market access to pre-sale projects can be fierce. As an internal Realtor and Manager with MLA Canada, Lance has relationships in place to get his clients in the door first.</p>
+          </div>
+          <div class="col-xl-3">
+            <div class="mx-xl-3 my-xl-3">
+              <img src="../assets/MLArealty_Logo2.png" class="img-fluid" alt="MLA Canada Logo">
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <hr class="featurette-divider">
+  
+      <section id="feat-proj" class="container text-center">
+        <h1 class="section-title">
+          Featured Projects
+        </h1>
+        <div class="row row-cols-3">
+          
+          <div class="col-4 card feat-proj-card" style="min-width: 20rem; max-width: 25rem;">
+            <img src="../assets/new-dev_featured_Boden.jpg" class="" alt="..." loading="lazy">
+            <div class="card-body">
+              <div class="card-text">
+                <p class="accent-text">Vancouver, BC</p>
+                <h2 class="h4" style="margin-bottom: 0; color: black; text-transform: uppercase;">BODEN</h2>
+                <span class="line"></span>
+                <p class="accent-text">Register Now</p>
+              </div>
+              <a href="#" class="details-btn">Details</a>
+            </div>
+          </div>
+  
+          <div class="col-4 card feat-proj-card" style="min-width: 20rem; max-width: 25rem;">
+            <img src="../assets/new-dev_featured_Alina.png" class="" alt="..." loading="lazy">
+            <div class="card-body">
+              <div class="card-text">
+                <p class="accent-text">Coquitlam, BC</p>
+                <h2 class="h4" style="margin-bottom: 0; color: black; text-transform: uppercase;">ALINA</h2>
+                <span class="line"></span>
+                <p class="accent-text">Now Selling</p>
+              </div>
+              <a href="#" class="details-btn">Details</a>
+            </div>
+          </div>
+  
+          <div class="col-4 card feat-proj-card" style="min-width: 20rem; max-width: 25rem;">
+            <img src="../assets/new-dev_featured_Baycrest-West.jpg" class="" alt="..." loading="lazy">
+            <div class="card-body">
+              <div class="card-text">
+                <p class="accent-text">Coquitlam, BC</p>
+                <h2 class="h4" style="margin-bottom: 0; color: black; text-transform: uppercase;">BAYCREST WEST</h2>
+                <span class="line"></span>
+                <p class="accent-text">Now Selling</p>
+              </div>
+              <a href="#" class="details-btn">Details</a>
+            </div>
+          </div>
+  
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <button type="button" class="col-auto browse-btn btn btn-outline-dark btn-lg text-uppercase">Browse More</button>
+        </div>
+        
+      </section>
+      
+      <!-- CONTACT BANNER -->
+      <section id="contact-banner" class="row featurette justify-content-around mt-3 text-start" style="background-image: url('../assets/contact-banner.jpg')">
+        <div class="col-xl-6 order-xl-2 align-self-center py-4 contact-snippet">
+          <h2 class="featurette-heading fw-normal lh-1 text-light">Work with <span class="">Lance Brown</span> </h2>
+          <p class="lead text-light">To fully understand your lifestyle goals I feel it’s important to sit down and meet in person. The best transactions come together from a working relationship that is based on trust and honesty. These values are built over time and from face to face interactions. Preferably with chai lattes.</p>
+          <a class="" href="#">+1 778-846-2006</a>
+        </div>
 
-    <!-- CONTACT BANNER -->
-    <section id="contact-banner" class="row featurette justify-content-around mt-3" style="background-image: url('../assets/contact-banner.jpg')">
-      <div class="col-xl-6 order-xl-2 align-self-center py-4 contact-snippet">
-        <h2 class="featurette-heading fw-normal lh-1 text-light">Work with <span class="">Lance Brown</span> </h2>
-        <p class="lead text-light">To fully understand your lifestyle goals I feel it’s important to sit down and meet in person. The best transactions come together from a working relationship that is based on trust and honesty. These values are built over time and from face to face interactions. Preferably with chai lattes.</p>
-        <a class="" href="#">+1 778-846-2006</a>
-      </div>
+        <div class="col-xl-auto order-xl-1">
+          <form id="contactForm" class="row input-container" method="post" enctype="multipart/form-data">
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <input type="text" required />
+                <label>Name</label> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input">
+                <input type="text" required />
+                <label>Email</label> 
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="styled-input" style="float:right;">
+                <input type="text" required />
+                <label>Phone Number</label> 
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="styled-input wide">
+                <textarea required></textarea>
+                <label>Message</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="btn-lrg submit-btn">Send Message</div>
+            </div>
+          </form>
+        </div>
+      </section><!-- /CONTACT BANNER -->
+    </section><!-- /fluid container -->
+    
 
-      <div class="col-xl-auto order-xl-1">
-        <form id="contactForm" class="row input-container" method="post" enctype="multipart/form-data">
-          <div class="col-xs-12">
-            <div class="styled-input wide">
-              <input type="text" required />
-              <label>Name</label> 
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="styled-input">
-              <input type="text" required />
-              <label>Email</label> 
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="styled-input" style="float:right;">
-              <input type="text" required />
-              <label>Phone Number</label> 
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="styled-input wide">
-              <textarea required></textarea>
-              <label>Message</label>
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div class="btn-lrg submit-btn">Send Message</div>
-          </div>
-        </form>
-      </div>
-    </section><!-- /CONTACT BANNER -->
+    
   </main>
 
   <!-- FOOTER -->
