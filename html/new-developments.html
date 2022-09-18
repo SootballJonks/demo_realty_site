@@ -241,26 +241,26 @@
           <form id="contactForm" class="row input-container" method="post" enctype="multipart/form-data">
             <div class="col-xs-12">
               <div class="styled-input wide">
-                <input type="text" required />
-                <label>Name</label> 
+                <input type="text" id="contactName" name="contactName" required />
+                <label for="contactName">Name</label> 
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
               <div class="styled-input">
-                <input type="text" required />
-                <label>Email</label> 
+                <input type="text" id="contactEmail" name="contactEmail" required />
+                <label for="contactEmail">Email</label> 
               </div>
             </div>
             <div class="col-md-6 col-sm-12">
               <div class="styled-input" style="float:right;">
-                <input type="text" required />
-                <label>Phone Number</label> 
+                <input type="text" id="contactPhone" name="contactPhone" required />
+                <label for="contactPhone">Phone Number</label> 
               </div>
             </div>
             <div class="col-xs-12">
               <div class="styled-input wide">
-                <textarea required></textarea>
-                <label>Message</label>
+                <textarea form="contactForm" id="contactMessage" name="contactMessage" required></textarea>
+                <label for="contactMessage">Message</label>
               </div>
             </div>
             <div class="col-xs-12">
@@ -277,7 +277,7 @@
 
   <!-- FOOTER -->
   <footer class="footer position-relative text-center text-lg-start text-light">
-    <img src="../assets/footer_decal.png" class="foot-decal position-absolute top-50 start-0 translate-middle-y">
+    <img src="../assets/footer_decal.png" class="foot-decal position-absolute top-50 start-0 translate-middle-y" alt="">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <!-- Left -->
