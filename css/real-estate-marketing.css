@@ -1,0 +1,12 @@
+.section-title {
+  font-size: 50px;
+  margin-top: 10rem;
+}
+
+.line {
+  content: "";
+  width: 10rem;
+  position: absolute;
+  transform: translateX(-50%);
+  border-top: 1.5px solid black;
+}

@@ -1,6 +1,8 @@
 //---------------------- GLOBAL ----------------------
 
-let featurettes = document.getElementsByClassName('featurette');
+// **Excludes "Real Estate Marketing" page**
+if (!document.location.pathname === "/html/real-estate-marketing.html") {
+  let featurettes = document.getElementsByClassName('featurette');
 
 document.addEventListener('DOMContentLoaded',() => {
     for (f of featurettes) {
@@ -31,5 +33,6 @@ window.addEventListener('resize', () => {
     }
   };
 })
+}
 
 //---------------------- ABOUT ----------------------

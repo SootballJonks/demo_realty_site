@@ -76,6 +76,35 @@ main {
 }
 /* rtl:end:ignore */
 
+.section-title {
+  margin-bottom: 5rem;
+  color: black;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.section-title::after {
+  content: "";
+  border-bottom: 3px solid #010101;
+  position: absolute;
+  width: 80px;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: width ease-out 2s;
+  -moz-transition: width ease-out 2s;
+  transition: width ease-out 2s
+}
+
 
 /* FEATURETTES
 -------------------------------------------------- */
