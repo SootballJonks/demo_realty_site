@@ -1,0 +1,35 @@
+.section-title {
+  font-size: 50px;
+  margin-top: 10rem;
+}
+
+.n-square {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  padding: 0;
+}
+
+.n-grid {
+  justify-content: space-evenly;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media only screen and (max-width: 1400px) {
+  .n-grid {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section-title {
+    font-size: 30px;
+    margin-top: 10rem;
+  }
+}
