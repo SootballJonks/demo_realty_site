@@ -1,6 +1,9 @@
+#hero {
+  background-position: center top;
+}
+
 .hero-text {
   margin-top: 10rem;
-  margin-bottom:10rem;
 }
 
 .contact-page-form {
@@ -26,12 +29,75 @@
   color: inherit;
 }
 
-@media only screen and (max-width: 576px) {
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+  .hero-text svg {
+    width: 0;
+  }
+
   .contact-page-form {
     margin-right: 0;
   }
 
+  #svg-replace {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #svg-replace::before {
+    content: "What's your home worth?";
+    color:black;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+  }
+
+  #svg-replace-2 {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+
+  #svg-replace-2::before {
+    content: "Contact Lance today";
+    color:black;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .input-container {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 576px) {
+
+
   .svg {
     transform: scale(0.7);
+  }
+
+  #svg-replace::before {
+    font-size: 24px;
+  }
+
+  #svg-replace-2::before {
+    font-size: 20px;
   }
 }

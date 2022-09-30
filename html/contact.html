@@ -123,10 +123,10 @@
   </header>
 
   <main>
-    <div id="hero" class="position-relative overflow-hidden text-light d-flex justify-content-center" aria-label="A beautiful home" style="background-image: url('/assets/hero-contact.jpg')">
+    <div id="hero" class="position-relative overflow-hidden text-light d-block justify-content-center" aria-label="A beautiful home" style="background-image: url('/assets/hero-contact.jpg')">
       <div class="hero-text container-fluid">
         <div class="row contact-page-form justify-content-end">
-          <div class="col-xl-auto">
+          <div class="col-xl-auto w-auto">
             <div class="svg text-center">
               <svg width="669px" height="121px" viewBox="0 0 669 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
@@ -147,40 +147,50 @@
               <a href="tel:778-846-2006"><i class="fa-solid fa-phone"></i> 778-846-2006</a>
               <a href="mailto:lance@westcoastishome.com"><i class="fa-solid fa-envelope"></i> lance@westcoastishome.com</a>
             </div>
-            <form id="contactForm" class="row input-container" method="post" enctype="multipart/form-data">
-              <div class="col-xs-12">
-                <div class="styled-input wide">
-                  <input type="text" id="contactName" name="contactName" required />
-                  <label for="contactName">Name</label> 
+            <div id="form-hero-container">
+              <form id="contactForm" class="row input-container" method="post" enctype="multipart/form-data">
+                <div class="col-xs-12">
+                  <div class="styled-input wide">
+                    <input type="text" id="contactName" name="contactName" required />
+                    <label for="contactName">Name</label> 
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="styled-input">
-                  <input type="text" id="contactEmail" name="contactEmail" required />
-                  <label for="contactEmail">Email</label> 
+                <div class="col-md-6 col-sm-12">
+                  <div class="styled-input">
+                    <input type="text" id="contactEmail" name="contactEmail" required />
+                    <label for="contactEmail">Email</label> 
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="styled-input" style="float:right;">
-                  <input type="text" id="contactPhone" name="contactPhone" required />
-                  <label for="contactPhone">Phone Number</label> 
+                <div class="col-md-6 col-sm-12">
+                  <div class="styled-input" style="float:right;">
+                    <input type="text" id="contactPhone" name="contactPhone" required />
+                    <label for="contactPhone">Phone Number</label> 
+                  </div>
                 </div>
-              </div>
-              <div class="col-xs-12">
-                <div class="styled-input wide">
-                  <textarea form="contactForm" id="contactMessage" name="contactMessage" required></textarea>
-                  <label for="contactMessage">Message</label>
+                <div class="col-xs-12">
+                  <div class="styled-input wide">
+                    <textarea form="contactForm" id="contactMessage" name="contactMessage" required></textarea>
+                    <label for="contactMessage">Message</label>
+                  </div>
                 </div>
-              </div>
-              <div class="col-xs-12">
-                <div class="btn-lrg submit-btn">Send Message</div>
-              </div>
-            </form>
+                <div class="col-xs-12">
+                  <div class="btn-lrg submit-btn">Send Message</div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
+      </div>
+      
+    </div>
+
+    <!-- <section class="text-center">
+      <div id="svg-replace"></div>
+      <div id="svg-replace-2"></div>
+      <div id="form-resp-target">
 
       </div>
-    </div>
+    </section> -->
   </main>
 
 
