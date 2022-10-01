@@ -1,103 +1,102 @@
-#hero {
-  background-position: center top;
+/* 
+ok here's the game plan. we keep the title center for now, and build the rest of it out.
+maybe it'll look fine. i dunno. you have been wasting so much time trying to fix this.
+get it together, fuckin christ.
+
+this better be finished before you leave for the weekend. fuck.
+*/
+
+.title-whole {
+  margin: 0px 20rem;
+  max-width: 720px;
 }
 
-.hero-text {
-  margin-top: 10rem;
-}
-
-.contact-page-form {
-  margin-right: 5rem;
-  max-width: 100%;
-}
-
-.svg {
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
-}
-
-.phone-email {
-  text-align: center;
+.title-top {
+  width: 100%;
   margin-top: 3rem;
-  font-size: 36px;
+  color:rgb(255, 255, 255);
+  font-size: 50px;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  transform: translate(15rem, 8rem);
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.phone-email a {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  text-decoration: none;
-  background-color: transparent;
-  color: inherit;
+.title-bottom {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color:rgb(255, 255, 255);
+  font-size: 50px;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  transform: translate(15rem, 8rem);
+  text-shadow: 2px 2px 4px #000000;
 }
 
-.input-container {
-  width: 650px;
-  max-width: 100%;
-  margin: 20px auto 25px auto;
+
+
+.img-resize {
+  min-height: 75vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 3rem;
 }
 
+@media only screen and (max-width: 1400px) {
+  .title-top {
+    font-size: 45px;
+    white-space: nowrap;
+  }
+  .title-bottom {
+    font-size: 45px;
+    white-space: nowrap;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
-
-  .hero-text svg {
-    width: 0;
+  
+  .title-whole {
+    margin: 0px 10rem;
   }
 
-  .contact-page-form {
-    margin-right: 0;
-  }
+}
 
-  #svg-replace {
-    width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-  }
+@media only screen and (max-width: 1100px) {
+  .title-whole {
+    margin: 0px 7rem;
 
-  #svg-replace::before {
-    content: "What's your home worth?";
-    color:black;
-    font-size: 50px;
-    text-transform: uppercase;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid black;
-  }
-
-  #svg-replace-2 {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 3rem;
-  }
-
-  #svg-replace-2::before {
-    content: "Contact Lance today";
-    color:black;
-    font-size: 50px;
-    text-transform: uppercase;
-    padding-bottom: 1rem;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .input-container {
-    margin-top: 0;
+  .title-whole {
+    display: none;
+  }
+
+  .img-resize {
+    height: 50vh;
+    min-height: auto;
+    background-position:center top;
+    background-size: 100%;
+    margin-top: 3rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
-
+  .img-resize {
+    height: 40vh;
+    background-size: 100%;
+    margin-top: 0rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
-
-
-  .svg {
-    transform: scale(0.7);
+  .img-resize {
+    height: 25vh;
+    background-size: 100%;
+    margin-top: 0rem;
   }
 
-  #svg-replace::before {
-    font-size: 24px;
-  }
-
-  #svg-replace-2::before {
-    font-size: 20px;
-  }
 }
