@@ -35,6 +35,27 @@
   margin-top: 3rem;
 }
 
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.phone-email a {
+  text-decoration: none;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -126,6 +147,19 @@
     background-size: 100%;
     margin-top: 1rem;
   }
+
+  .title-resp-top {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    font-size: 36px;
+  }
+  
+  .title-resp-bottom {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 36px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -133,6 +167,31 @@
     height: 30vh;
     background-size: 100%;
     margin-top: 0rem;
+  }
+
+  .phone-email a {
+    text-decoration: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .title-resp-top {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    font-size: 26px;
+    white-space: nowrap;
+  }
+  
+  .title-resp-bottom {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 24px;
+    padding: 0;
+  }
+
+  .phone-email a {
+    font-size: 24px;
   }
 
 }
