@@ -52,8 +52,8 @@ if (document.location.pathname === "/html/real-estate-marketing.html") {
   
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
-      } else {
-        reveals[i].classList.remove("active");
+      // } else {
+      //   reveals[i].classList.remove("active");
       }
     }
   }
