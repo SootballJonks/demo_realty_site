@@ -12,10 +12,26 @@
   border-radius: 0;
 }
 
+.hero-text {
+  width: 50%;
+}
+
 .hero-text button {
   background-color: rgb(255, 255, 255);
 }
 
 .hero-text button:hover {
   color:white;
+}
+
+@media only screen and (max-width: 1400px) {
+  .hero-text {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hero-text {
+    width: 90%;
+  }
 }
