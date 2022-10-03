@@ -129,7 +129,7 @@ main {
 #contact-banner {
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 100%;
+  background-size: cover;
   text-shadow: 2px 2px 8px #000000;
   background-color: rgba(0, 0, 0, 0.404);
   background-blend-mode: multiply;

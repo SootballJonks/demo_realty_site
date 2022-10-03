@@ -1,3 +1,40 @@
+/* FORM CSS OVERRIDE
+-------------------------------------------------- */
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  color: rgb(0, 0, 0);
+  top: -15px;
+}
+
+
+.styled-input label {
+  color: rgb(0, 0, 0);
+}
+
+
+input, textarea {
+  padding-bottom: 10px;
+  background-color: transparent;
+  border-bottom: 1.5px solid #000000;
+  color: rgb(0, 0, 0);
+}
+
+.submit-btn {
+  float: none;
+  width: auto;
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.705);
+  color: rgb(0, 0, 0);
+  margin-top: 2rem;
+}
+
+.submit-btn:hover {
+  transform: translateY(3px);
+  background-color: rgba(0, 0, 0, 0.747);
+  color: white;
+}
+
+/* ---------------------------------------- */
+/* ----------------- Everything else ------------------ */
 
 .title-whole {
   margin: 0px 20rem;
@@ -55,6 +92,22 @@
   padding-left: 3rem;
   padding-right: 3rem;
 }
+
+.socials {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.socials a {
+  padding: 0 3rem;
+}
+
+.map-info p {
+  color: black;
+  font-size: larger;
+  margin-bottom: 0.5rem;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -170,9 +223,9 @@
   }
 
   .phone-email a {
-    text-decoration: none;
     padding-left: 0;
     padding-right: 0;
+    font-size: 24px;
   }
 
   .title-resp-top {
@@ -190,8 +243,7 @@
     padding: 0;
   }
 
-  .phone-email a {
-    font-size: 24px;
+  .socials a {
+    padding: 0 1rem;
   }
-
 }
