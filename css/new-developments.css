@@ -134,7 +134,7 @@
     margin: 3rem;
   }
 
-  .row-cols-3 {
+  #feat-proj .row-cols-3 {
     justify-content: center;
   }
 
