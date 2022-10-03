@@ -1,0 +1,21 @@
+/*search bar*/
+
+.search-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(100, 100, 100, 0.47);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.form-select, .form-control, .search-container button {
+  border-radius: 0;
+}
+
+.hero-text button {
+  background-color: rgb(255, 255, 255);
+}
+
+.hero-text button:hover {
+  color:white;
+}

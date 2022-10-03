@@ -10,6 +10,7 @@
     <link rel="preload" href="/assets/hero-index.jpg" as="image">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -176,7 +177,37 @@
               </g>
           </g>
         </svg>
-        <a class="btn btn-outline-light" href="#">Browse Listings</a> 
+
+        <div class="container mt-5">
+          <div class=" row d-flex justify-content-center search-container">
+          <div class="col-md-12">
+              <div class="row justify-content-between text-center">
+                <div class="col-md-2">
+                  <div class="dropdown">
+                    <select class="form-select" aria-label="Lance Brown Real Estate - Search for listings">
+                      <option data-id="buy-button" value="1" selected>Buy</option>
+                      <option data-id="sell-button" value="2">Sell</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div id="search-bar" class="col-md-7">
+                    <div>
+                      <input type="text" class="form-control" placeholder="City, Address, Postal Code">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <button class="btn btn-outline-dark">START SEARCH</button>
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+
+        
       </div>
     </div>
 
@@ -216,6 +247,7 @@
           </div>
           
         </div>
+        <a class="btn btn-outline-light" href="#">Browse Listings</a> 
       </div><!-- /Circle Columns -->
 
       <!-- FEATURETTES -->
