@@ -3,9 +3,6 @@
   margin-top: 10rem;
 }
 
-.n-grid-container {
-}
-
 .n-grid-square {
   justify-content: center;
   padding: 3rem;
@@ -28,10 +25,7 @@
 -------------------------------------------------- */
 
 @media only screen and (max-width: 1400px) {
-  .n-grid {
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
+
 }
 
 @media only screen and (max-width: 576px) {
