@@ -180,34 +180,27 @@
 
         <div class="container-fluid mt-5">
           <div class="row d-flex justify-content-center search-container">
-          <div class="col-md-12">
+            <div class="col-md-12">
               <div class="row justify-content-around text-center">
-                <div class="col-md-auto">
+                <div id="box-target" class="col-md-auto">
                   <div class="dropdown">
-                    <select class="form-select" aria-label="Lance Brown Real Estate - Search for listings">
-                      <option data-id="buy-button" value="1" selected>Buy</option>
-                      <option data-id="sell-button" value="2">Sell</option>
+                    <select id="buy-sell" class="form-select" aria-label="Lance Brown Real Estate - Search for listings">
+                      <option value="buy-button" selected>Buy</option>
+                      <option value="sell-button">Sell</option>
                     </select>
                   </div>
                 </div>
 
-                <div id="search-bar" class="col-md-auto flex-grow-1">
-                    <div>
-                      <input type="text" class="form-control" placeholder="City, Address, Postal Code">
-                    </div>
-                </div>
+                <!--Search bars appear here-->
 
                 <div class="col-md-auto">
-                    <button class="btn btn-outline-dark"><i class="fa-solid fa-magnifying-glass"></i>START SEARCH</button>
+                  <button id="search-btn" class="btn btn-outline-dark"></button>
                 </div>
               </div>
-
+            </div>
           </div>
-        </div>
-      </div>
+        </div> <!-- /search bar -->
 
-
-        
       </div>
     </div>
 
