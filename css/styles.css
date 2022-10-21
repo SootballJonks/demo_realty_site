@@ -133,6 +133,8 @@ main {
   text-shadow: 2px 2px 8px #000000;
   background-color: rgba(0, 0, 0, 0.404);
   background-blend-mode: multiply;
+  -webkit-transform: translate3d(0,0,1px); 
+  -webkit-backface-visibility: hidden;
 }
 
 .contact-snippet {
