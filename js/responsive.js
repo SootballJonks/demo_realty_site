@@ -39,29 +39,15 @@ window.addEventListener('resize', () => {
 })
 }
 
+
 //SEARCH BAR NONSENSE (prepare for redundancy)
 const buySellSelector = document.getElementById("buy-sell");
-console.log(document.getElementById('search-btn'))
-//generate the default bar
-if(buySellSelector.value === "buy-button") {
-  let submitBtn = document.getElementById('search-btn');
-  submitBtn.innerHTML = `<i class="fa-solid fa-magnifying-glass"></i>START SEARCH`;
-  document.querySelector('#box-target').insertAdjacentHTML('afterend',
-  `<div id="search-bar-buy" class="col-md-auto flex-grow-1">
-  <div>
-    <input type="text" class="form-control" placeholder="City, Address, Postal Code">
-  </div>
-</div>`
-  )
-}
 
-//logic for changing buy/sell dropdown
-buySellSelector.addEventListener("change", () => {
-  if(buySellSelector.value === "buy-button") {
+//generate the default bar
+if(buySellSelector) {
+  if (buySellSelector.value === "buy-button") {
     let submitBtn = document.getElementById('search-btn');
     submitBtn.innerHTML = `<i class="fa-solid fa-magnifying-glass"></i>START SEARCH`;
-    let oldElement = document.getElementById('search-bar-sell');
-    oldElement.remove();
     document.querySelector('#box-target').insertAdjacentHTML('afterend',
     `<div id="search-bar-buy" class="col-md-auto flex-grow-1">
     <div>
@@ -69,23 +55,42 @@ buySellSelector.addEventListener("change", () => {
     </div>
   </div>`
     )
-  } else if (buySellSelector.value === "sell-button") {
-    let submitBtn = document.getElementById('search-btn');
-    submitBtn.innerHTML = `<i class="fa-solid fa-magnifying-glass"></i>GET VALUE`;
-    let oldElement = document.getElementById('search-bar-buy');
-    oldElement.remove();
-    document.querySelector('#box-target').insertAdjacentHTML('afterend',
-    `<div id="search-bar-sell" class="col-md-auto d-flex flex-row flex-grow-1">
-    <div class="col-md-6 flex-grow-1">
-      <input type="text" class="form-control" placeholder="Your home address">
-    </div>
-    <div class="col-md-6 flex-grow-1">
-      <input type="text" class="form-control" placeholder="Your email address">
-    </div>
-  </div>`
-    )
   }
-})
+}
+
+//logic for changing buy/sell dropdown
+if (buySellSelector) {
+  buySellSelector.addEventListener("change", () => {
+    if(buySellSelector.value === "buy-button") {
+      let submitBtn = document.getElementById('search-btn');
+      submitBtn.innerHTML = `<i class="fa-solid fa-magnifying-glass"></i>START SEARCH`;
+      let oldElement = document.getElementById('search-bar-sell');
+      oldElement.remove();
+      document.querySelector('#box-target').insertAdjacentHTML('afterend',
+      `<div id="search-bar-buy" class="col-md-auto flex-grow-1">
+      <div>
+        <input type="text" class="form-control" placeholder="City, Address, Postal Code">
+      </div>
+    </div>`
+      )
+    } else if (buySellSelector.value === "sell-button") {
+      let submitBtn = document.getElementById('search-btn');
+      submitBtn.innerHTML = `<i class="fa-solid fa-magnifying-glass"></i>GET VALUE`;
+      let oldElement = document.getElementById('search-bar-buy');
+      oldElement.remove();
+      document.querySelector('#box-target').insertAdjacentHTML('afterend',
+      `<div id="search-bar-sell" class="col-md-auto d-flex flex-row flex-grow-1">
+      <div class="col-md-6 flex-grow-1">
+        <input type="text" class="form-control" placeholder="Your home address">
+      </div>
+      <div class="col-md-6 flex-grow-1">
+        <input type="text" class="form-control" placeholder="Your email address">
+      </div>
+    </div>`
+      )
+    }
+  })
+}
 
 
 
